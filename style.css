@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+    font-family: cursive;
+
+}
+.form{
+    background-color: white;
+    padding: 20px;
+    /* add some shadow to add boxy effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    /* we add margin around our form so there is space when screen get smaller */
+    margin: 10px;
+}
+.input{
+    /* we use block to use input as whole block */
+    display: block;
+    width: 100%;
+    /* keep same amount of space left and right */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    /* border of solid type of 4px and green */
+    border: solid 4px green;
+    color: green;
+    font-size: 30px;
+}
+
+
+/* to acces place holder */
+.input::placeholder{
+    color: lightgreen;
+    font-family: cursive;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: inherit;
+    margin: 20px 0;
+    border-radius: 5px;
+    /* box shadow for submit button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    /* change cursor to pointer */
+    cursor: pointer;
+
+}
+
+/* change on hover characteristic. make it lighter */
+.btn:hover{
+
+    /* makes it 90%  */
+    filter: brightness(0.9);
+}
+
+.score{
+    color: green;
+    text-align: right;
+}
